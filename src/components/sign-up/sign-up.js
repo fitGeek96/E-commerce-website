@@ -39,11 +39,10 @@ class SignUp extends Component {
         }
     }
 
-
     handleChange = e => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
 
-        this.setState({[name] : value});
+        this.setState({[name]: value});
     }
 
     render() {
@@ -55,7 +54,7 @@ class SignUp extends Component {
                 <form className="sign-up-form" onSubmit={this.handleSubmit}>
                     <FormInput
                         type="text"
-                        name="display Name"
+                        name="displayName"
                         value={displayName}
                         onChange={this.handleChange}
                         label="Name"
@@ -76,10 +75,10 @@ class SignUp extends Component {
                         required/>
                     <FormInput
                         type="password"
-                        name="confirm password"
+                        name="confirmpassword"
                         value={confirmpassword}
                         onChange={this.handleChange}
-                        label="Confirm password"
+                        label="Confirmpassword"
                         required/>
                     <CustomButton type='submit'>SIGN UP</CustomButton>
                 </form>
